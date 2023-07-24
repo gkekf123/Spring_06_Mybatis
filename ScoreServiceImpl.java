@@ -15,20 +15,23 @@ public class ScoreServiceImpl implements ScoreService{
 	@Autowired
 	private ScoreMapper scoreMapper;
 	
+	// 등록
 	@Override
 	public void scoreRegist(ScoreVO vo) {
 		scoreMapper.scoreRegist(vo);
 	}
 
+	// 조회
 	@Override
 	public ArrayList<ScoreVO> getScores() {
 		
-		return null;
+		return scoreMapper.getScores();
 	}
 
+	// 삭제
 	@Override
 	public void scoreDelete(int index) {
-		
+		scoreMapper.scoreDelete(index);
 	}
 
 	

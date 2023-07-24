@@ -12,4 +12,6 @@ public void scoreRegist(ScoreVO vo); // 등록
 	
 	public void scoreDelete(int index); // 삭제
 	
+	
+	
 }
