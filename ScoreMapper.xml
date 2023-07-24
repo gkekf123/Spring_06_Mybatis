@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.simple.mapper.ScoreMapper">
+  
+  	<!-- insert -->
+  	<!-- 매개변수의 전달 parameterType vo의 풀경로가 들어온다-->
+  	<!-- ?{}가 #{}로 사용되야 한다 -->
+  	<insert id="scoreRegist" parameterType="com.simple.command.ScoreVO">
+  		insert into score(name, kor, eng) values(#{name}, #{kor}, #{eng})
+  	</insert>
+  
+  </mapper>
